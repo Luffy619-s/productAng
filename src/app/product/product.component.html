@@ -1,0 +1,20 @@
+<div class="row">
+    @for (item of productlist; track $index) {
+
+        <div class="col-3">
+        
+        <div class="card mb-3">
+            <img src={{item.thumbnail}} width="100%"  class="text-center" alt="Fissure in Sandstone"/>
+            <div class="card-body ">
+              <h5 class="card-title">{{item.title}}</h5>
+              <p class="card-text">{{item.description}}</p> 
+              <a href="#!" class="btn btn-primary" data-mdb-ripple-init>${{item.price}}</a>
+            </div>
+          </div>
+        </div>
+    }
+
+</div>
+
+
+
